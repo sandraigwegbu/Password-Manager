@@ -110,7 +110,7 @@ website_entry.focus()
 website_entry.grid(column=1, row=1, sticky="w")
 
 email_username_entry = Entry(width=52)
-email_username_entry.insert(0, "sandra.igwegbu@myemail.com")  # pre-populates user's email address
+email_username_entry.insert(0, "sandra@myemail.com")  # pre-populates user's email address
 email_username_entry.grid(column=1, row=2, columnspan=2, sticky="w")
 
 password_entry = Entry(width=34)
