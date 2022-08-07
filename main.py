@@ -3,7 +3,9 @@ from tkinter import messagebox
 from random import choice, randint, shuffle
 import pyperclip
 import json
+import os
 
+MY_EMAIL_ADDRESS = os.environ.get("MY_EMAIL_ADDRESS")
 
 # ---------------------------- RANDOM PASSWORD GENERATOR ------------------------------- #
 def generate_password():
@@ -110,7 +112,7 @@ website_entry.focus()
 website_entry.grid(column=1, row=1, sticky="w")
 
 email_username_entry = Entry(width=52)
-email_username_entry.insert(0, "sandra@myemail.com")  # pre-populates user's email address
+email_username_entry.insert(0, MY_EMAIL_ADDRESS)  # pre-populates user's email address
 email_username_entry.grid(column=1, row=2, columnspan=2, sticky="w")
 
 password_entry = Entry(width=34)
